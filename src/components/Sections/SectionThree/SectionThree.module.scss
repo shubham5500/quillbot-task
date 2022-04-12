@@ -1,0 +1,57 @@
+@import "../../mixin.scss";
+
+.sectionThreeBg {
+  background: #f9faff;
+
+  @include forPhoneOnly {
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .sectionThreeWrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1080px;
+    flex-direction: column;
+
+    .subHeading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .progressSection {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 72px;
+      margin-bottom: 72px;
+
+      @include forPhoneOnly {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .progressWrapper {
+        flex: 1;
+
+
+        @include forPhoneOnly {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .progressText {
+        line-height: 28px;
+        margin: 20px 0;
+      }
+    }
+
+    .countSection {
+
+    }
+  }
+
+}

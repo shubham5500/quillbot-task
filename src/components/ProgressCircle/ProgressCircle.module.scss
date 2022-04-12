@@ -1,0 +1,44 @@
+@import "../mixin.scss";
+
+.progressSVGWrapper{
+  fill: none;
+  transform: rotate(-90deg);
+  height: 146px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 146px;
+}
+
+.circle {
+  stroke-dasharray: 534;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 4s;
+}
+
+.seventySixPercent {
+  stroke-dashoffset: 224;
+}
+
+.count {
+  font-weight: 600;
+  padding-left: 10px;
+  width: 100%;
+  color: #0e101a;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+
+  span {
+    font-size: 30px;
+  }
+}
+
+.progressWrapper {
+  width: 146px;
+  height: 146px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

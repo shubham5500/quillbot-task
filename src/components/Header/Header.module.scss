@@ -1,0 +1,15 @@
+@import "../mixin.scss";
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 18px;
+
+  @include forPhoneOnly {
+    align-items: center;
+    padding-top: 12px;
+  }
+}

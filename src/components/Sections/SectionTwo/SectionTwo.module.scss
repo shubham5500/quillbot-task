@@ -1,0 +1,117 @@
+@import "../../mixin.scss";
+
+.sectionTwoWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 675px;
+  margin: 0 auto;
+  padding: 6px 0 48px 0;
+
+  @include forPhoneOnly {
+    width: auto;
+    padding-top: 200px;
+  }
+
+  .topSection {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: 100%;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .flGrow {
+      flex-grow: 1;
+    }
+
+    > span {
+      font-size: 11px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: #6D758D;
+    }
+
+    .medium {
+      font-size: 15px;
+    }
+  }
+
+  .heading {
+    text-align: center;
+
+    .upLevelText {
+      margin-bottom: 16px;
+    }
+
+    .unlockText {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.upLevel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include forPhoneOnly {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    flex: 1;
+
+    ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      li {
+        list-style-image: url(https://static.grammarly.com/assets/files/3252614f5e974a46c75e9035de53011b/checkmark.svg);
+        margin-bottom: 8px;
+        margin-left: 24px;
+        position: relative;
+
+        .withBorder {
+          display: flex;
+          position: relative;
+
+          .spanWrapper {
+            justify-content: flex-start;
+
+            span {
+              font-size: 14px;
+            }
+
+            span:before {
+              -moz-background-size: 3px 1px;
+              -webkit-background-size: 3px 1px;
+              background-position: bottom;
+              background-repeat: repeat-x;
+              background-size: 3px 1px;
+              content: "";
+              display: block;
+              height: 1px;
+              left: 0;
+              position: absolute;
+              top: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
